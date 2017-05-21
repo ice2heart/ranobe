@@ -1,7 +1,5 @@
 const MongoClient    = require('mongodb').MongoClient;
 const db             = require('./config/db');
-const request = require('request');
-const cheerio = require('cheerio');
 const queue = require('async').queue;
 
 var q = queue(function(task, callback) {
